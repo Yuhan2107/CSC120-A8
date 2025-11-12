@@ -25,7 +25,7 @@ _Hint: use `super` whenever possible to avoid duplicating code!_
 Since each of the three subclasses have additional options, start by overriding the `showOptions()` method to reflect the subclass-specific options for `House`, `Library`, and `Cafe`.
 
 ### `goToFloor(int n)`
-Most `Library` buildings (and some `House`s as well) have elevators, which means it is possible to move between non-adjacent floors in a single action. Override the `goToFloor(int n)` method to reflect this. 
+Most `Library` buildings (and some `House`s as well) have elevators, which means it is possible to move between non-adjacent floors in a single action. Some buildings do not have elevators, thus moving between noon-adjacent floors is impossible. Override the `goToFloor(int n)` method to reflect this. 
 
 _Hint: you may want to add a `boolean` attribute to elevator-friendly classes to indicate whether or not the building has an elevator, and use this in determining whether or not a call to `goToFloor(...)` is valid._
 
